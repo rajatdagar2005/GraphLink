@@ -1,4 +1,4 @@
-# GraphLink Pro
+# GraphLink
 
 An interactive Graph Visualisation Tool built using HTML, CSS, and JavaScript.
 
@@ -12,9 +12,3 @@ An interactive Graph Visualisation Tool built using HTML, CSS, and JavaScript.
 - HTML
 - CSS
 - JavaScript
-
-## 📸 Demo
-(Add screenshots here)
-
-## 📚 Project Info
-Mini Project for Graph Theory Course (JIIT Noida)
