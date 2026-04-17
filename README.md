@@ -1,6 +1,6 @@
 # GraphLink
 
-An interactive Graph Visualisation Tool built using HTML, CSS, and JavaScript.
+An interactive Graph Visualisation Tool built using HTML, CSS, and TypeScript.
 
 ## 🚀 Features
 - Add nodes and edges
@@ -11,4 +11,4 @@ An interactive Graph Visualisation Tool built using HTML, CSS, and JavaScript.
 ## 🛠️ Tech Stack
 - HTML
 - CSS
-- JavaScript
+- TypeScript
