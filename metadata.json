@@ -1,0 +1,6 @@
+{
+  "name": "GraphLink Pro",
+  "description": "An advanced graph visualization tool for simulating BFS, DFS, and Dijkstra's algorithms with custom nodes, edges, and real-time logging.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}

@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* High Density Theme Colors */
+  --bg-dark: #0f1115;
+  --panel-bg: #1a1d23;
+  --border-color: #2d333b;
+  --accent-blue: #3b82f6;
+  --accent-green: #10b981;
+  --accent-purple: #8b5cf6;
+  --text-main: #e6edf3;
+  --text-muted: #8b949e;
+  --node-bg: #21262d;
+}
+
+@layer base {
+  body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family: var(--font-sans);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply bg-[var(--node-bg)] border border-[var(--border-color)] text-[var(--text-main)] px-3 py-2 rounded-md text-sm cursor-pointer transition-all hover:border-[var(--accent-blue)];
+  }
+
+  .btn-active {
+    @apply bg-[var(--accent-blue)] border-[var(--accent-blue)] text-white hover:bg-[var(--accent-blue)]/90;
+  }
+
+  .btn-primary {
+    @apply bg-[var(--accent-blue)] border-[var(--accent-blue)] text-white font-medium hover:bg-[var(--accent-blue)]/90;
+  }
+
+  .sidebar {
+    @apply bg-[var(--panel-bg)] border-[var(--border-color)] p-4 flex flex-col gap-5;
+  }
+
+  .panel-title {
+    @apply text-[11px] uppercase tracking-wider text-[var(--text-muted)] font-bold mb-2;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .log-entry {
+    @apply font-mono text-[12px] py-1 border-b border-white/5;
+  }
+
+  .log-entry-type {
+    @apply text-[var(--accent-green)];
+  }
+
+  .edge-line {
+    transform-origin: 0 50%;
+  }
+
+  /* Edge Arrows */
+  .edge-line::after {
+    content: '';
+    display: var(--arrow-display, none);
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 8px solid currentColor;
+    color: inherit;
+    background: transparent !important;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
