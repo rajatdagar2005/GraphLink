@@ -4,7 +4,7 @@ GraphLink is an interactive graph visualization and algorithm simulation platfor
 
 ## 🌐 Live Demo
 
-🚀 https://graph-link.vercel.app/
+##  https://graph-link.vercel.app/
 
 ## ✨ Features
 
